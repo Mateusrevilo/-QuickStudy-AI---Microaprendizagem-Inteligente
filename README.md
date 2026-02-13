@@ -18,6 +18,8 @@ Validação: Zod(Validação de esquema em tempo de execução).
 
 Dica: TypeScript (modo estrito).
 
+
+
 quickstudy-ai/
 ├── backend/                 # API Server (Fastify + Prisma)
 │   ├── prisma/              # Configuração do Banco de Dados
@@ -34,6 +36,8 @@ quickstudy-ai/
 │   ├── .env                 # Variáveis de ambiente (DB_URL, JWT_SECRET)
 │   └── tsconfig.json        # Configurações do compilador TS
 │
+
+
 ├── frontend/                # Interface Web & PWA (Next.js)
 │   ├── public/              # Assets estáticos e Manifest do PWA
 │   ├── src/
@@ -43,6 +47,9 @@ quickstudy-ai/
 │   │   └── services/        # Configuração do Axios/API Client
 │   └── tailwind.config.js   # Estilização do sistema
 │
+
+
+
 ├── ai-engine/               # Infraestrutura de Inteligência Artificial
 │   └── dify/                # Self-hosted Dify (via Docker)
 │

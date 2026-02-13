@@ -1,0 +1,1 @@
+# -QuickStudy-AI---Microaprendizagem-Inteligente

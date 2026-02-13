@@ -18,6 +18,36 @@ Validação: Zod(Validação de esquema em tempo de execução).
 
 Dica: TypeScript (modo estrito).
 
+quickstudy-ai/
+├── backend/                 # API Server (Fastify + Prisma)
+│   ├── prisma/              # Configuração do Banco de Dados
+│   │   └── schema.prisma    # Modelagem de dados (Users, Studies)
+│   ├── src/
+│   │   ├── @types/          # Tipagens globais do TypeScript
+│   │   ├── controllers/     # Orquestradores de requisições (req/res)
+│   │   ├── lib/             # Instâncias de serviços (Prisma, Dify Client)
+│   │   ├── routes/          # Definição dos endpoints (URLs)
+│   │   ├── schemas/         # Validações de entrada (Zod Schemas)
+│   │   ├── services/        # Regras de negócio e integração com Dify
+│   │   ├── app.ts           # Configuração de plugins e middlewares
+│   │   └── server.ts        # Ponto de entrada do servidor
+│   ├── .env                 # Variáveis de ambiente (DB_URL, JWT_SECRET)
+│   └── tsconfig.json        # Configurações do compilador TS
+│
+├── frontend/                # Interface Web & PWA (Next.js)
+│   ├── public/              # Assets estáticos e Manifest do PWA
+│   ├── src/
+│   │   ├── app/             # Rotas e Páginas (Next.js App Router)
+│   │   ├── components/      # Componentes UI (Botões, Cards, Player)
+│   │   ├── hooks/           # Lógica de estado e consumo de API (TanStack Query)
+│   │   └── services/        # Configuração do Axios/API Client
+│   └── tailwind.config.js   # Estilização do sistema
+│
+├── ai-engine/               # Infraestrutura de Inteligência Artificial
+│   └── dify/                # Self-hosted Dify (via Docker)
+│
+└── docker-compose.yml       # Orquestração de containers (Postgres, Redis, Dify)
+
 🏗️ Arquitetura do Sistema
 O projeto segue os princípios da Arquitetura Limpa , separando responsabilidades para facilitar a manutenção e escalabilidade:
 
